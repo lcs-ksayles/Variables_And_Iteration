@@ -33,8 +33,9 @@ canvas.fillColor = Color.init(hue: 30, saturation: 0, brightness: 40, alpha: 100
 canvas.drawRectangle(centreX: 150, centreY: 30, width: 300, height: 110)
 
 //Draw mountain tops
+canvas.fillColor = Color.init(hue: 30, saturation: 0, brightness: 70, alpha: 100)
 for i in stride(from: 0, through: 150, by: 1) {
-canvas.drawLine(fromX: i, fromY: 100, toX: 50 + i, toY: 200 - i)
+canvas.drawLine(fromX: i, fromY: 150, toX: 200 + i, toY: 200 - i)
 }
 //: ## Add your code below
 
