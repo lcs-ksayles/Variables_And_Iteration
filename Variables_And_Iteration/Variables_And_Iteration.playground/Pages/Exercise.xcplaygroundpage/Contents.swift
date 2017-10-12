@@ -27,17 +27,23 @@ canvas.drawShapesWithBorders = false
 canvas.fillColor = Color.init(hue: 30, saturation: 0, brightness: 70, alpha: 100)
 canvas.drawRectangle(centreX: 150, centreY: 80, width: 300, height: 160)
 
+canvas.lineColor = Color.init(hue: 20, saturation: 0, brightness: 20, alpha: 50)
+for x in stride(from: 0, through: 120, by: 1) {
+    canvas.drawLine(fromX: 0, fromY: x, toX: 120 - x, toY: x)
+canvas.drawLine(fromX: 80, fromY: x, toX: 200 - x, toY: x)
+    canvas.drawLine(fromX: 160, fromY: x, toX: 280 - x , toY: x)
+    canvas.drawLine(fromX: 240, fromY: x, toX: 360 - x, toY: x)
+}
+for y in stride(from: 0, through: 60, by: 1)  {
+canvas.drawLine(fromX: y, fromY: 0, toX: y, toY: 60 + y)
+}
+//: ## Add your code below
+
 //Draw smaller mountains
 canvas.drawShapesWithBorders = false
 canvas.fillColor = Color.init(hue: 30, saturation: 0, brightness: 40, alpha: 100)
 canvas.drawRectangle(centreX: 150, centreY: 30, width: 300, height: 110)
 
-//Draw mountain tops
-canvas.fillColor = Color.init(hue: 30, saturation: 0, brightness: 70, alpha: 100)
-for i in stride(from: 0, through: 150, by: 1) {
-canvas.drawLine(fromX: i, fromY: 150, toX: 200 + i, toY: 200 - i)
-}
-//: ## Add your code below
 
 
 
