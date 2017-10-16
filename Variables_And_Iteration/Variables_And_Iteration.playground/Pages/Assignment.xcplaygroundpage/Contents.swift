@@ -18,12 +18,54 @@ import PlaygroundSupport
 //: ## Add your code below
 
 // Create canvas
-let canvas = Canvas(width: 300, height: 300)
+let canvas = Canvas(width: 500, height: 500)
 
-// Below this line, try combining a loop and four statements that draw lines to generate the goal
+// Draw lines
+for x in stride(from: 0, through: 500, by: 10)  {
+
+    canvas.drawLine(fromX: 500, fromY: x, toX: 0, toY: 500)
+}
+
+// Draw lines
+for y in stride(from: 500, through: 0, by: -10)  {
+    
+    canvas.drawLine(fromX: y, fromY: 500, toX: 500, toY: 0)
+}
+
+
+/*:
+ ## Template code
+ The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
+ */
 
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
 PlaygroundPage.current.liveView = canvas.imageView
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
