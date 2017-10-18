@@ -22,6 +22,7 @@ let canvas = Canvas(width: 500, height: 500)
 canvas.fillColor = Color.black
 canvas.drawRectangle(centreX: 250, centreY: 250, width: 500, height: 500)
 
+
 // Draw circles
 canvas.drawShapesWithBorders = false
 canvas.fillColor = Color.blue
@@ -36,6 +37,12 @@ canvas.drawEllipse(centreX: 400, centreY: 100, width: 100, height: 100)
 canvas.fillColor = Color.orange
 canvas.drawEllipse(centreX: 100, centreY: 100, width: 100, height: 100)
 
+// Draw connecting line
+canvas.drawShapesWithFill = false
+canvas.drawShapesWithBorders = true
+canvas.defaultBorderWidth = 5
+canvas.borderColor = Color.white
+canvas.drawRectangle(centreX: 250, centreY: 250, width: 320, height: 320)
 
 // Draw Lines
 canvas.lineColor = Color.white
