@@ -66,6 +66,17 @@ for i in stride(from: 0, through: 500, by: 10)  {
     canvas.drawLine(fromX: 0, fromY: 250, toX: 500, toY: i)
 }
 
+// Write Name
+canvas.lineColor = Color.red
+canvas.drawLine(fromX: 400, fromY: 0, toX: 400, toY: 30)
+canvas.drawLine(fromX: 400, fromY: 15, toX: 410, toY: 30)
+canvas.drawLine(fromX: 400, fromY: 15, toX: 410, toY: 0)
+
+canvas.drawLine(fromX: 415, fromY: 0, toX: 415, toY: 30)
+canvas.drawLine(fromX: 415, fromY: 1, toX: 430, toY: 2)
+canvas.drawLine(fromX: 415, fromY: 15, toX: 430, toY: 16)
+canvas.drawLine(fromX: 415, fromY: 30, toX: 430, toY: 31)
+
 
 /*:
  ## Template code
