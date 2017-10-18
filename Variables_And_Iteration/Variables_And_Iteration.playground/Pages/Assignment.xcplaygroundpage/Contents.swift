@@ -19,30 +19,47 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 500, height: 500)
+canvas.fillColor = Color.black
+canvas.drawRectangle(centreX: 250, centreY: 250, width: 500, height: 500)
+
+// Draw circles
+canvas.drawShapesWithBorders = false
+canvas.fillColor = Color.blue
+canvas.drawEllipse(centreX: 100, centreY: 400, width: 100, height: 100)
+
+canvas.fillColor = Color.red
+canvas.drawEllipse(centreX: 400, centreY: 400, width: 100, height: 100)
+
+canvas.fillColor = Color.green
+canvas.drawEllipse(centreX: 400, centreY: 100, width: 100, height: 100)
+
+canvas.fillColor = Color.orange
+canvas.drawEllipse(centreX: 100, centreY: 100, width: 100, height: 100)
+
 
 // Draw Lines
+canvas.lineColor = Color.white
 for x in stride(from: 0, through: 500, by: 10)  {
     
     canvas.drawLine(fromX: 250, fromY: 500, toX: x, toY:0)
 }
-
 // Draw Lines
 for y in stride(from: 0, through: 500, by: 10)  {
     
     canvas.drawLine(fromX: 500, fromY: 250, toX: 0, toY: y)
 }
-
 // Draw Lines
 for z in stride(from: 0, through: 500, by: 10)  {
     
     canvas.drawLine(fromX: 250, fromY: 0, toX: z, toY: 500)
 }
-
 // Draw Lines
 for i in stride(from: 0, through: 500, by: 10)  {
     
     canvas.drawLine(fromX: 0, fromY: 250, toX: 500, toY: i)
 }
+
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
