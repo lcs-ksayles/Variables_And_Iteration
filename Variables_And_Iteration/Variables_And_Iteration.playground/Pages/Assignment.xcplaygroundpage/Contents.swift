@@ -77,7 +77,7 @@ canvas.drawLine(fromX: 415, fromY: 1, toX: 430, toY: 2)
 canvas.drawLine(fromX: 415, fromY: 15, toX: 430, toY: 16)
 canvas.drawLine(fromX: 415, fromY: 30, toX: 430, toY: 31)
 
-
+canvas.drawLine(fromX: 440, fromY: 0, toX: 440, toY: 15)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
